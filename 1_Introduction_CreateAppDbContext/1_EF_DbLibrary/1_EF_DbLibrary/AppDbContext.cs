@@ -1,6 +1,8 @@
-﻿namespace _1_EF_DbLibrary
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace _1_EF_DbLibrary
 {
-    public class Class1
+    public class AppDbContext : DbContext
     {
 
     }
