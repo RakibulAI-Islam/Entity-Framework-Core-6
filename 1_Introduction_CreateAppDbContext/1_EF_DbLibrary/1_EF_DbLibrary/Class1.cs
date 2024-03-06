@@ -1,4 +1,4 @@
-﻿namespace _1_EFCore_DbLibrary
+﻿namespace _1_EF_DbLibrary
 {
     public class Class1
     {
