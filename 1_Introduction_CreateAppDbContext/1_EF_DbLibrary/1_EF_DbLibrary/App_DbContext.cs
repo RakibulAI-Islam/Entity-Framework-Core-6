@@ -2,7 +2,7 @@
 
 namespace _1_EF_DbLibrary
 {
-    public class AppDbContext : DbContext
+    public class App_DbContext : DbContext
     {
 
     }
