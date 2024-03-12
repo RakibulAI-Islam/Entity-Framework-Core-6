@@ -19,5 +19,9 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\1_Introduction_CreateAppDbContext\1_EF_DbLibrary\1_EF_DbLibrary\1_EF_DbLibrary.csproj" />
+  </ItemGroup>
  
 </Project>
