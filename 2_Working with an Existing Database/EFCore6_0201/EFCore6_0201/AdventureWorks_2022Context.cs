@@ -90,6 +90,7 @@ namespace EFCore6_0201
                     .HasComment("ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.");
             });
 
+            
             modelBuilder.Entity<BusinessEntity>(entity =>
             {
                 entity.HasComment("Source of the ID that connects vendors, customers, and employees with address and contact information.");
