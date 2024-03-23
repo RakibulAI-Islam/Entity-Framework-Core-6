@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
 
@@ -7,6 +8,7 @@ namespace EFCore6_0201
     class Program 
     {
         private static IConfigurationRoot _configuration;
+        private static DbContextOptionsBuilder<AdventureWorks_2022Context> _optionsBuilder;
         static void Main(string[] args)
         {
             BuildConfiguration();
@@ -19,6 +21,13 @@ namespace EFCore6_0201
             var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("App_Settings.json", optional:true, reloadOnChange:true);
             
             _configuration = builder.Build();
+
+        }
+
+        static void BuildOptions()
+        {
+            _optionsBuilder = new DbContextOptionsBuilder<AdventureWorks_2022Context>();
+            _optionsBuilder.UseSqlServer(_configuration.GetConnectionString("AdventureWorks_2022"));
 
         }
     }
