@@ -1,0 +1,4 @@
+
+{
+  "ConnectionStrings": { "AdventureWorks_2022": "Data Source = RAKIB-DESKTOP; Initial Catalog = AdventureWorks_2022; Trusted_Connection = True" }
+}
