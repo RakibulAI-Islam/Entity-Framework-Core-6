@@ -34,6 +34,19 @@ namespace EFCore6_0301
             _optionsBuilder.UseSqlServer(_configuration.GetConnectionString("AdventureWorks_2022"));
         }
 
+        static void ListPeople()
+        {
+            using ( var db = new AdventureWorks_2022Context( _optionsBuilder.Options))
+            {
+                var people = db.People.OrderByDescending(x => x.LastName).Take(20).ToList();
+
+                foreach ( var person in people)
+                {
+                    Console.WriteLine($"{person.FirstName} {person.LastName}");
+                }
+            }
+        }
+
     }
 }
 
