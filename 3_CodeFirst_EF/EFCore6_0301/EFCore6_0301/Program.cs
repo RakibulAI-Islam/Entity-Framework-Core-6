@@ -14,9 +14,11 @@ namespace EFCore6_0301
         static void Main(string[] args)
         {
             BuildConfiguration();
+            BuildOptions();
+            ListPeople();
 
             //Console.WriteLine("Hello, World!");
-            Console.WriteLine($"CNSTR: { _configuration.GetConnectionString("AdventureWorks_2022")}");
+            //Console.WriteLine($"CNSTR: { _configuration.GetConnectionString("AdventureWorks_2022")}");
 
         }
 
