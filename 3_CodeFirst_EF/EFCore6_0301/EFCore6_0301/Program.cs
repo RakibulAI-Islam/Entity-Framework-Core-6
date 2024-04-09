@@ -10,6 +10,7 @@ namespace EFCore6_0301
         private static IConfigurationRoot _configuration;
         static void Main(string[] args)
         {
+            BuildConfiguration();
             Console.WriteLine("Hello, World!");
 
         }
