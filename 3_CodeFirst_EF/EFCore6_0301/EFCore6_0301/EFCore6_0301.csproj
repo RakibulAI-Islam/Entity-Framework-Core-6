@@ -20,4 +20,10 @@
     <ProjectReference Include="..\..\1_EF_DbLibrary\1_EF_DbLibrary\1_EF_DbLibrary.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="App_Settings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
