@@ -17,6 +17,8 @@ namespace EFCore6_0301
         static void BuildConfiguration()
         {
             var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("App_Setting.json",optional: true,reloadOnChange: true);
+            
+            _configuration = builder.Build();
         }
 
     }
