@@ -11,13 +11,15 @@ namespace EFCore6_0301
         static void Main(string[] args)
         {
             BuildConfiguration();
-            Console.WriteLine("Hello, World!");
+
+            //Console.WriteLine("Hello, World!");
+            Console.WriteLine($"CNSTR: { _configuration.GetConnectionString("AdventureWorks_2022")}");
 
         }
 
         static void BuildConfiguration()
         {
-            var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("App_Setting.json",optional: true,reloadOnChange: true);
+            var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("App_Settings.json", optional: true, reloadOnChange: true);
             
             _configuration = builder.Build();
         }
