@@ -2716,7 +2716,7 @@ namespace _1_EF_DbLibrary.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            /* Down method should likely never be run ^ an Existing Database for the 1st Migration. */
+            /* Down-method should likely never be run ^ an Existing Database for the 1st Migration. */
             
             //migrationBuilder.DropTable(
             //    name: "AWBuildVersion");
