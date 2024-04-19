@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using _1_EF_DbLibrary;
 
@@ -11,9 +12,10 @@ using _1_EF_DbLibrary;
 namespace _1_EF_DbLibrary.Migrations
 {
     [DbContext(typeof(AdventureWorks_2022Context))]
-    partial class AdventureWorks_2022ContextModelSnapshot : ModelSnapshot
+    [Migration("20240419115531_Create_Improvement_Plans")]
+    partial class Create_Improvement_Plans
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
