@@ -1088,22 +1088,6 @@ namespace _1_EF_DbLibrary.Migrations
                     b.HasComment("Bicycle assembly diagrams.");
                 });
 
-            modelBuilder.Entity("_1_EF_DbLibrary.ImprovementPlan", b =>
-                {
-                    b.Property<int>("BusinessEntityID")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("PlanEnd")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("PlanStart")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("BusinessEntityID");
-
-                    b.ToTable("ImprovementPlans");
-                });
-
             modelBuilder.Entity("_1_EF_DbLibrary.JobCandidate", b =>
                 {
                     b.Property<int>("JobCandidateId")
@@ -5088,17 +5072,6 @@ namespace _1_EF_DbLibrary.Migrations
                         .IsRequired();
 
                     b.Navigation("BusinessEntity");
-                });
-
-            modelBuilder.Entity("_1_EF_DbLibrary.ImprovementPlan", b =>
-                {
-                    b.HasOne("_1_EF_DbLibrary.Employee", "Employee")
-                        .WithMany()
-                        .HasForeignKey("BusinessEntityID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Employee");
                 });
 
             modelBuilder.Entity("_1_EF_DbLibrary.JobCandidate", b =>
