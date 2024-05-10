@@ -4,12 +4,13 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using EFCore6_0302;
+using _1_EF_DbLibrary;
 
 public class Program
 {
     private static IConfigurationRoot _configuration;
 
-    //private static DbContextOptionsBuilder<InventoryDbContext> _optionBuilder;
+    private static DbContextOptionsBuilder<Inventory_2022_Context> _optionBuilder;
 
     static void Main(string[] args)
     {
@@ -19,7 +20,7 @@ public class Program
     static void BuildOptions()
     {
         _configuration = ConfigurationBuilderSingleton.ConfigurationRoot;
-        //_optionBuilder = new DbContextOptionsBuilder<InventoryDbContext>();
-        //_optionBuilder.UseSqlServer(_configuration.GetConnectionString("InventoryManager"));
+        _optionBuilder = new DbContextOptionsBuilder<Inventory_2022_Context>();
+        _optionBuilder.UseSqlServer(_configuration.GetConnectionString("InventoryManager"));
     }
 }
