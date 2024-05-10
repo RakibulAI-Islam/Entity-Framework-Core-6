@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCore6_0302", "EFCore6_0302\EFCore6_0302.csproj", "{8000CFE0-B29A-49A0-9745-11F67DA7D152}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1_EF_DbLibrary", "1_EF_DbLibrary\1_EF_DbLibrary\1_EF_DbLibrary.csproj", "{0D89FF68-EEDA-4899-AE58-F0152D410855}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8000CFE0-B29A-49A0-9745-11F67DA7D152}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8000CFE0-B29A-49A0-9745-11F67DA7D152}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8000CFE0-B29A-49A0-9745-11F67DA7D152}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D89FF68-EEDA-4899-AE58-F0152D410855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D89FF68-EEDA-4899-AE58-F0152D410855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D89FF68-EEDA-4899-AE58-F0152D410855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D89FF68-EEDA-4899-AE58-F0152D410855}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
