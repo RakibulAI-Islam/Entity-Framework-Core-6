@@ -10,7 +10,7 @@ using _1_EF_DbLibrary;
 
 namespace _1_EF_DbLibrary.Migrations
 {
-    [DbContext(typeof(AdventureWorks_2022Context))]
+    [DbContext(typeof(Inventory_2022_Context))]
     partial class AdventureWorks_2022ContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

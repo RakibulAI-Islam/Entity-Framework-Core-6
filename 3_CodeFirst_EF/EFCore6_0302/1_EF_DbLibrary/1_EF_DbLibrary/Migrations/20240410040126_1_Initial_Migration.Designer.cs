@@ -11,7 +11,7 @@ using _1_EF_DbLibrary;
 
 namespace _1_EF_DbLibrary.Migrations
 {
-    [DbContext(typeof(AdventureWorks_2022Context))]
+    [DbContext(typeof(Inventory_2022_Context))]
     [Migration("20240410040126_1_Initial_Migration")]
     partial class _1_Initial_Migration
     {

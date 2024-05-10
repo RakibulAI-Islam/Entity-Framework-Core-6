@@ -5,13 +5,13 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace _1_EF_DbLibrary
 {
-    public partial class AdventureWorks_2022Context : DbContext
+    public partial class Inventory_2022_Context : DbContext
     {
-        public AdventureWorks_2022Context()
+        public Inventory_2022_Context()
         {
         }
 
-        public AdventureWorks_2022Context(DbContextOptions<AdventureWorks_2022Context> options)
+        public Inventory_2022_Context(DbContextOptions<Inventory_2022_Context> options)
             : base(options)
         {
         }
