@@ -1,6 +1,6 @@
 ﻿namespace InventoryModels
 {
-    public class class1
+    public class Item
     {
 
 
