@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using InventoryModels;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
@@ -16,6 +17,11 @@ namespace _1_EF_DbLibrary
         {
         }
 
+        // My add:
+
+        public  DbSet<Item> Items { get; set; } = null!;
+
+        //
         public virtual DbSet<Address> Addresses { get; set; } = null!;
         public virtual DbSet<AddressType> AddressTypes { get; set; } = null!;
         public virtual DbSet<AwbuildVersion> AwbuildVersions { get; set; } = null!;
