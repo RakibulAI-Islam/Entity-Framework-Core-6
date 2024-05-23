@@ -14,7 +14,7 @@ namespace _1_EF_DbLibrary
         [ForeignKey("Employee")]
 
         public int BusinessEntityID { get; set;}
-        public virtual Employee Employee { get; set; }
+        public virtual Employee? Employee { get; set; }
 
         [Required]
         public DateTime PlanStart { get; set; } 
