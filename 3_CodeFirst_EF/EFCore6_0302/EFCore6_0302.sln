@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCore6_0302", "EFCore6_030
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1_EF_DbLibrary", "1_EF_DbLibrary\1_EF_DbLibrary\1_EF_DbLibrary.csproj", "{0D89FF68-EEDA-4899-AE58-F0152D410855}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryModels", "InventoryModels\InventoryModels.csproj", "{D7E2AB38-9943-4A3B-A58D-E45C5F98BF63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0D89FF68-EEDA-4899-AE58-F0152D410855}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D89FF68-EEDA-4899-AE58-F0152D410855}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D89FF68-EEDA-4899-AE58-F0152D410855}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7E2AB38-9943-4A3B-A58D-E45C5F98BF63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7E2AB38-9943-4A3B-A58D-E45C5F98BF63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7E2AB38-9943-4A3B-A58D-E45C5F98BF63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7E2AB38-9943-4A3B-A58D-E45C5F98BF63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
