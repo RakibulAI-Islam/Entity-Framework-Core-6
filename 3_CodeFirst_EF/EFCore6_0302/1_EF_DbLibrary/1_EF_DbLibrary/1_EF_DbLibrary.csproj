@@ -17,6 +17,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\InventoryModels\InventoryModels.csproj" />
+  </ItemGroup>
+
   <!--<ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.27" />
   </ItemGroup>-->
