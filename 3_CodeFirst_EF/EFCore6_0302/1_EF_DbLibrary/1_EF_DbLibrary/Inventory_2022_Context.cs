@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using InventoryModels;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace _1_EF_DbLibrary
@@ -21,7 +22,7 @@ namespace _1_EF_DbLibrary
 
         // My add:
 
-        private static IConfirationRoot _configuration;
+        private static IConfigurationRoot? _configuration;
 
         public  DbSet<Item> Items { get; set; } = null!;
 
