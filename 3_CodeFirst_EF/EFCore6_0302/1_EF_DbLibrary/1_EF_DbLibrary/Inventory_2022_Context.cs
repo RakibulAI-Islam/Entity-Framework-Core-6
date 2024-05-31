@@ -7,7 +7,8 @@ using Microsoft.EntityFrameworkCore.Metadata;
 namespace _1_EF_DbLibrary
 {
     public partial class Inventory_2022_Context : DbContext
-    {
+    {   
+        //Add a 'Default Constructor' if 'Scaffoldind is Needed'.
         public Inventory_2022_Context()
         {
         }
