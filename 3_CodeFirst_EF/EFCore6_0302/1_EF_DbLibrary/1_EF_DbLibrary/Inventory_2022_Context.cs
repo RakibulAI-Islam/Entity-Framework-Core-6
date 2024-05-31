@@ -4,6 +4,7 @@ using InventoryModels;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore.Metadata;
+using System.IO;
 
 namespace _1_EF_DbLibrary
 {
@@ -130,6 +131,14 @@ namespace _1_EF_DbLibrary
             {
 #warning //To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
                 //optionsBuilder.UseSqlServer("Data Source='Rakib-DESKTOP';Initial Catalog='InventoryManagerDB'; Trusted_Connection='True'");
+
+                var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json", optional: true, reloadOnChange: true );
+                
+                _configuration = builder.Build();
+                var constr = _configuration.GetConnectionString("InventoryManager");
+
+                optionsBuilder.UseSqlServer(constr);
+
             }
         }
 
