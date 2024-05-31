@@ -21,6 +21,8 @@ namespace _1_EF_DbLibrary
 
         // My add:
 
+        private static IConfirationRoot _configuration;
+
         public  DbSet<Item> Items { get; set; } = null!;
 
         //
