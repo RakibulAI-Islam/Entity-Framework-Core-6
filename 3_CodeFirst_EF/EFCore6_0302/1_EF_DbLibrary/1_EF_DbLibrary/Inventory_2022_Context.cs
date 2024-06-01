@@ -23,7 +23,7 @@ namespace _1_EF_DbLibrary
 
         // My add:
 
-        private static IConfigurationRoot? _configuration;
+        private static IConfigurationRoot _configuration;
 
         public  DbSet<Item> Items { get; set; } = null!;
 
