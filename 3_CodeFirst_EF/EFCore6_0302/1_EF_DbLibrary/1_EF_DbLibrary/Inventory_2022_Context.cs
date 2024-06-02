@@ -15,11 +15,12 @@ namespace _1_EF_DbLibrary
         {
         }
 
+        /*
         //Add the 'Complex Constructor' for allowing 'Dependency Injection'. 
         public Inventory_2022_Context(DbContextOptions<Inventory_2022_Context> options)
             : base(options)
         {
-        }
+        }*/
 
         // My add:
 
