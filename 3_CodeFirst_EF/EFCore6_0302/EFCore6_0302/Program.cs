@@ -8,7 +8,7 @@ using _1_EF_DbLibrary;
 
 public class Program
 {
-    private static IConfigurationRoot? _configuration;
+    private static IConfigurationRoot _configuration;
 
     private static DbContextOptionsBuilder<Inventory_2022_Context>? _optionBuilder;
 
