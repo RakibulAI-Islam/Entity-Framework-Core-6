@@ -15,18 +15,17 @@ namespace _1_EF_DbLibrary
         {
         }
 
-        /*
         //Add the 'Complex Constructor' for allowing 'Dependency Injection'. 
         public Inventory_2022_Context(DbContextOptions<Inventory_2022_Context> options)
             : base(options)
         {
-        }*/
+        }
 
         // My add:
 
         private static IConfigurationRoot _configuration;
 
-        public  DbSet<Item> Items { get; set; } = null!;
+        public  DbSet<Item> Items { get; set; }
 
         //
         public virtual DbSet<Address> Addresses { get; set; } = null!;
@@ -129,7 +128,11 @@ namespace _1_EF_DbLibrary
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
-            {  
+            {
+
+#warning //To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+               //optionsBuilder.UseSqlServer("Data Source='Rakib-DESKTOP';Initial Catalog='InventoryManagerDB'; Trusted_Connection='True'");
+
                 var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json", optional: true, reloadOnChange: true );
                 
                 _configuration = builder.Build();
@@ -138,10 +141,7 @@ namespace _1_EF_DbLibrary
                 optionsBuilder.UseSqlServer(constr);
 
             }
-            /* 
-#warning //To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-               //optionsBuilder.UseSqlServer("Data Source='Rakib-DESKTOP';Initial Catalog='InventoryManagerDB'; Trusted_Connection='True'");
-               */
+            
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
