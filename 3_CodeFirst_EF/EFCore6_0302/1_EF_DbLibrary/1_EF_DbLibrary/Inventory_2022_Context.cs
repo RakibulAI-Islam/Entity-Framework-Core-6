@@ -136,6 +136,8 @@ namespace _1_EF_DbLibrary
                 var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json", optional: true, reloadOnChange: true );
                 
                 _configuration = builder.Build();
+
+
                 var constr = _configuration.GetConnectionString("InventoryManager");
 
                 optionsBuilder.UseSqlServer(constr);
