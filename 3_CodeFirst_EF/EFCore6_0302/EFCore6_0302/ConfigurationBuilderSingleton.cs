@@ -10,10 +10,11 @@ namespace EFCore6_0302
 {
     public sealed class ConfigurationBuilderSingleton
     {  
-        /*
+        
         private static ConfigurationBuilderSingleton _instance = null;
 
         private static readonly object instanceLock = new object();
+        
 
         private static IConfigurationRoot _configuration;
         
@@ -45,8 +46,7 @@ namespace EFCore6_0302
 
                 return _configuration;
             }
-        } */
-
+        }
 
     } 
 }
