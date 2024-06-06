@@ -10,7 +10,7 @@ public class Program
 {
     private static IConfigurationRoot _configuration;
 
-    //private static DbContextOptionsBuilder<Inventory_2022_Context> _optionBuilder;
+    private static DbContextOptionsBuilder<Inventory_2022_Context> _optionBuilder;
 
     static void Main(string[] args)
     {
@@ -21,7 +21,7 @@ public class Program
     {
         _configuration = ConfigurationBuilderSingleton.ConfigurationRoot;
         
-        //_optionBuilder = new DbContextOptionsBuilder<Inventory_2022_Context>();
-        //_optionBuilder.UseSqlServer(_configuration.GetConnectionString("InventoryManager"));
+        _optionBuilder = new DbContextOptionsBuilder<Inventory_2022_Context>();
+        _optionBuilder.UseSqlServer(_configuration.GetConnectionString("InventoryManager"));
     }
 }
