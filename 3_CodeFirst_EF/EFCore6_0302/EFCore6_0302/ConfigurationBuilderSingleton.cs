@@ -38,7 +38,7 @@ namespace EFCore6_0302
             }
         }
 
-        public static IConfigurationRoot? ConfigurationRoot
+        public static IConfigurationRoot ConfigurationRoot
         {
             get
             {
