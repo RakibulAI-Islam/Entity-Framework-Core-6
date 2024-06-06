@@ -20,7 +20,7 @@ namespace EFCore6_0302
         
         private ConfigurationBuilderSingleton()
         {
-            var builder = new ConfigurationBuilder().SetBasePath( Directory.GetCurrentDirectory()).AddJsonFile("appsetting.json", optional: true, reloadOnChange: true);
+            var builder = new ConfigurationBuilder().SetBasePath( Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
 
             _configuration = builder.Build();
         }
