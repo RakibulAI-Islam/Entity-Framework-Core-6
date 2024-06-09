@@ -16,5 +16,12 @@ namespace M_EFCore6_0302
         private static readonly object _instanceLock = new object();
 
         public static IConfigurationRoot _configuration;
+
+        private ConfigurationBuilderSingleton()
+        {
+            var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json", optional:true, reloadOnChange:true);
+
+            _configuration = builder.Build();
+        }
     }
 }

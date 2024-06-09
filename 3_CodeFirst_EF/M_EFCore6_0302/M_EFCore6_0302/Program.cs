@@ -3,20 +3,21 @@
 using Microsoft.Extensions.Configuration;
 using System.Net.NetworkInformation;
 
-public class Program
-{
-    private static IConfigurationRoot _configuration;
-    
-    static void Main(string[] args)
+
+    public class Program
     {
-        BuildOptions();
-        //Console.WriteLine("Hello, World!");
+        private static IConfigurationRoot _configuration;
+
+        static void Main(string[] args)
+        {
+            BuildOptions();
+            //Console.WriteLine("Hello, World!");
+        }
+
+        static void BuildOptions()
+        {
+            _configuration = ConfigurationBuilderSingleton.ConfigurationRoot;
+        }
     }
 
-    static void BuildOptions()
-    {
-        _configuration = ConfigurationBuilderSingleton.ConfigurationRoot;
-    }
-
-}
 
