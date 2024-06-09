@@ -3,7 +3,8 @@
 using Microsoft.Extensions.Configuration;
 using System.Net.NetworkInformation;
 
-
+namespace M_EFCore6_0302
+{
     public class Program
     {
         private static IConfigurationRoot _configuration;
@@ -19,5 +20,6 @@ using System.Net.NetworkInformation;
             _configuration = ConfigurationBuilderSingleton.ConfigurationRoot;
         }
     }
+}
 
 
