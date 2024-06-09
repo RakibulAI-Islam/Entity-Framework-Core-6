@@ -1,13 +1,22 @@
 ﻿// See https://aka.ms/new-console-template for more information
-//Console.WriteLine("Hello, World!");
 
+using Microsoft.Extensions.Configuration;
 using System.Net.NetworkInformation;
 
 public class Program
-{ 
+{
+    private static IConfigurationRoot _configuration;
+    
     static void Main(string[] args)
     {
-        //BuildOptions();
+        BuildOptions();
+        //Console.WriteLine("Hello, World!");
     }
+
+    static void BuildOptions()
+    {
+        _configuration = ConfigurationBuilderSingleton.ConfigurationRoot;
+    }
+
 }
 
