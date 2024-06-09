@@ -37,5 +37,17 @@ namespace M_EFCore6_0302
                 return _instance;
             }
         }
+
+        /*public*/
+        public static IConfigurationRoot ConfigurationRoot
+        {
+            get
+            {
+                if( _configuration == null)
+                { var x = Instance; }
+
+                return _configuration;
+            }
+        }
     }
 }
