@@ -1,13 +1,21 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 using System.Net.NetworkInformation;
+//using _2_EF_DBLibrary;  
+
+
 
 namespace M_EFCore6_0302
 {
     public class Program
     {
         private static IConfigurationRoot _configuration;
+
+        //private static DbContextOptionsBuilder<Inventory_Context> _optionBuilder;
+
 
         static void Main(string[] args)
         {
@@ -18,6 +26,10 @@ namespace M_EFCore6_0302
         static void BuildOptions()
         {
             _configuration = ConfigurationBuilderSingleton.ConfigurationRoot;
+
+            //_optionBuilder = new DbContextOptionsBuilder<Inventory_Context>();
+
+            //_optionBuilder.UseSqlServer(_configuration.GetConnectionString("InventoryManager"));
         }
     }
 }
