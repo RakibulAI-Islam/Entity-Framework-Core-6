@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using System.Net.NetworkInformation;
-//using _2_EF_DBLibrary;  
+using _2_EF_DBLibrary;  
 
 
 
@@ -14,7 +14,7 @@ namespace M_EFCore6_0302
     {
         private static IConfigurationRoot _configuration;
 
-        //private static DbContextOptionsBuilder<Inventory_Context> _optionBuilder;
+        private static DbContextOptionsBuilder<InventoryDbContext> _optionBuilder;
 
 
         static void Main(string[] args)
@@ -27,9 +27,9 @@ namespace M_EFCore6_0302
         {
             _configuration = ConfigurationBuilderSingleton.ConfigurationRoot;
 
-            //_optionBuilder = new DbContextOptionsBuilder<Inventory_Context>();
+            _optionBuilder = new DbContextOptionsBuilder<InventoryDbContext>();
 
-            //_optionBuilder.UseSqlServer(_configuration.GetConnectionString("InventoryManager"));
+            _optionBuilder.UseSqlServer(_configuration.GetConnectionString("InventoryManager"));
         }
     }
 }
