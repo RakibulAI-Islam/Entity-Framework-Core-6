@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>_2_EF_DBLibrary</RootNamespace>
+    <!--<RootNamespace>_2_EF_DBLibrary</RootNamespace>-->
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
